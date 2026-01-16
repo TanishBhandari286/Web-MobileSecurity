@@ -1,0 +1,9 @@
+services:
+  web:
+    image: php:8.2-apache
+    container_name: exp1-webnMobile
+    ports:
+      - "8080:80"
+    volumes:
+      # Maps your local 'src' folder to the container's web root
+      - ./src:/var/www/html
