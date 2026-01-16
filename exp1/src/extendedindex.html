@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extended Profile Form</title>
+  </head>
+  <body>
+    <form action="extendedbackend.php" method="POST">
+      <h2>CREATE PROFILE</h2>
+      <div>
+        <label>Username:</label>
+        <input type="text" name="username" required />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="password" required />
+      </div>
+      <div>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required />
+      </div>
+      <div>
+        <label>Phone Number:</label>
+        <input
+          type="tel"
+          name="phone"
+          pattern="[0-9]{10}"
+          placeholder="10 digit number"
+          required
+        />
+      </div>
+      <div>
+        <label>Email ID:</label>
+        <input type="email" name="email" required />
+      </div>
+      <button type="submit">GENERATE PROFILE</button>
+    </form>
+  </body>
+</html>
